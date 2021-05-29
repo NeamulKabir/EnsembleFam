@@ -26,7 +26,7 @@ The bash script `run.sh` executes all the steps of EnsembleFam one by one and re
 
 An example command to execute EnsembleFam: `./run.sh  ../data  86  ../data/train.txt  ../data/test.txt`
 
-**Note:** Feature collection using BLAST may require some time depending on the data size.
+**Note:** Feature collection step using BLAST may require some time depending on the data size.
 
 ## Twilight zone accuracy
 To calculate twilight zone accuracy or homology based accuracy, bash script `twilight_zone_run.sh` command can be used. It first calcuates the homology between training and test set, then calculates  accuracy for different identity level. To run this command, `run.sh` needs to be executed first. `twilight_zone_run.sh` requires two parameters: *cur_dir* and *num_class*.
