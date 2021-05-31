@@ -15,7 +15,7 @@ To execute EnsembleFam the following requirements need to be fullfilled:
  * Scikit-learn
 
 ## Data file
-Data file used in training and testing EnsembleFam can be downloaded from here. In the data file, EnsmebleFam requires all the sequences and their respective labels separated by tab character in one file, i.e. all training sequences in one file.
+Data file used in training and testing EnsembleFam can be downloaded from [here](https://drive.google.com/drive/folders/1l38Hx_Ppq8yLVuMvurqpbbi1M5A8YZ5D?usp=sharing). In the data file, EnsmebleFam requires all the sequences and their respective labels separated by tab character in one file, i.e. all training sequences in one file.
 
 ## Command to execute
 The bash script `run.sh` executes all the steps of EnsembleFam one by one and returns overall accuracy on the test set. This command requires four parameters in the following order: 
@@ -25,6 +25,8 @@ The bash script `run.sh` executes all the steps of EnsembleFam one by one and re
 4. *test_file* : test file (e.g. `../data/test.txt`)
 
 An example command to execute EnsembleFam: `./run.sh  ../data  86  ../data/train.txt  ../data/test.txt`
+
+For collecting feature using pHMM, we use predefined pHMM models from Pfam database. The predefined pHMM models used in EnsembleFam can be downloaded from [here](https://drive.google.com/file/d/1uhij9pJ_cI_Y__MRqNi34l0EMdxX-wVp/view?usp=sharing)
 
 **Note:** Feature collection step using BLAST may require some time depending on the data size.
 
